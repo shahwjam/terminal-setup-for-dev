@@ -1,0 +1,53 @@
+# ╔══════════════════════════════════════════╗
+# ║      starship.toml — Omarchy Style       ║
+# ║      Minimal prompt, max clarity         ║
+# ╚══════════════════════════════════════════╝
+
+# Omarchy uses a clean minimal prompt — no username, no hostname clutter
+format = """
+$directory$git_branch$git_status$python$nodejs$rust$golang
+$character"""
+
+[directory]
+style = "bold blue"
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "bold red"
+format = "[$all_status$ahead_behind]($style) "
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+[nodejs]
+symbol = " "
+style = "bold green"
+
+[python]
+symbol = " "
+style = "bold yellow"
+
+[rust]
+symbol = " "
+style = "bold red"
+
+[golang]
+symbol = " "
+style = "bold cyan"
+
+# Keep it clean — no time, no battery, no username
+[time]
+disabled = true
+
+[username]
+disabled = true
+
+[hostname]
+disabled = true
