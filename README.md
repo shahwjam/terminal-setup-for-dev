@@ -1,6 +1,6 @@
 # 🖥️ terminal-setup-for-dev
 
-> My macOS terminal setup inspired by [Omarchy](https://github.com/basecamp/omarchy) 
+> My macOS terminal setup inspired by [Omarchy] 
 > Ported and adapted for macOS using Ghostty, Zsh, and the same tools that make Omarchy feel so clean.
 
 ---
